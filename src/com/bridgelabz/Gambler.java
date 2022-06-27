@@ -31,11 +31,17 @@ public class Gambler {
         while (STAKE < UPPER_LIMIT && STAKE > LOWER_LIMIT){
         uc2();
         }
-
+    }
+    void uc4(){
+        while (DAY<=20){
+            System.out.println("day " + DAY++);
+            System.out.println("amount "+STAKE);
+        }
     }
     public static void main(String[] args) {
         Gambler game = new Gambler();
         game.uc2();
         game.uc3();
+        game.uc4();
     }
 }
